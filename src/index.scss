@@ -1,0 +1,34 @@
+$red: #aa4b41;
+$grey: lighten(#d4dde1, 10%);
+$black: #2d3033;
+$green: #335252;
+
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Bungee+Shade&family=Comfortaa:wght@300;400;500;700&family=Fredericka+the+Great&family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Bitter:ital,wght@0,400;0,700;1,400&family=Gayathri:wght@100;400;700&family=Parisienne&family=Sacramento&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/* set html and body height: 100% with container height: 100% will have container respond accordingly  */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-color: $grey;
+  max-width: 800px;
+  margin: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

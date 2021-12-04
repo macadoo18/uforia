@@ -1,0 +1,74 @@
+$red: #aa4b41;
+$grey: #d4dde1;
+$black: #2d3033;
+$green: #335252;
+$lightgreen: #d8e0bb;
+$yellow: #fff5c3;
+$blue: #76aac2;
+
+.signUpMain {
+  margin: auto;
+  padding-top: 60px;
+
+  .signUpForm {
+    width: 80%;
+    margin: auto;
+    max-width: 400px;
+    border: 2px solid $green;
+    border-radius: 5px;
+    padding: 10px 20px 15px 20px;
+    background-color: lighten($lightgreen, 13%);
+
+    h1 {
+      text-align: center;
+      font-family: Bad Script;
+    }
+    .inputContainer {
+      .username,
+      .phone,
+      .password {
+        padding-bottom: 12px;
+        margin: auto;
+        display: flex;
+      }
+
+      label {
+        padding: 5px 10px 0 0;
+      }
+
+      input {
+        height: 24px;
+        border-radius: 4px;
+        border: 1px solid $green;
+        flex: 1;
+        padding-left: 5px;
+      }
+    }
+
+    .red {
+      border: 1px solid $red;
+      color: $red;
+      text-align: center;
+      padding: 9px 0 3px 0;
+      border-radius: 4px;
+      margin-top: 0;
+    }
+
+    .submit {
+      color: $black;
+      display: block;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      border: 1px solid $green;
+      border-radius: 10px;
+      padding: 10px 14px 9px 14px;
+      border-top: 6px solid $green;
+
+      &:hover {
+        background-color: lighten($blue, 28%);
+        cursor: pointer;
+      }
+    }
+  }
+}

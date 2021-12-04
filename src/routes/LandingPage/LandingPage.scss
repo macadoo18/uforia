@@ -1,0 +1,44 @@
+$red: #aa4b41;
+$grey: #d4dde1;
+$black: #2d3033;
+$green: #335252;
+$lightgreen: #d8e0bb;
+$yellow: #fff5c3;
+$blue: #76aac2;
+
+.landingPageMain {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-family: Bungee Shade;
+      font-size: 28px;
+      margin-top: 8px;
+    }
+
+    h3 {
+      font-family: Zilla Slab;
+      font-style: italic;
+      font-size: 22px;
+      margin-top: 8px;
+      color: $green;
+    }
+
+    div {
+      border: 2px solid $green;
+      background-color: lighten($blue, 30%);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    p {
+      color: lighten($black, 10%);
+    }
+  }
+}

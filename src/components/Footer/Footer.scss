@@ -1,0 +1,43 @@
+$red: #aa4b41;
+$grey: #d4dde1;
+$black: #2d3033;
+$green: #335252;
+
+.footerMain {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  align-items: center;
+
+  h3 {
+    border-top: 2px solid $green;
+    font-family: Bad Script;
+    width: 90%;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  p {
+    margin: auto;
+    background-color: lighten($black, 40%);
+    margin-bottom: 8px;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $grey;
+      border: 1px solid $green;
+    }
+
+    a {
+      color: lighten($grey, 20%);
+      display: block;
+      padding: 8px 50px 2px 50px;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}

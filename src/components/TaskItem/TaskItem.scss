@@ -1,0 +1,110 @@
+$red: #aa4b41;
+$grey: #d4dde1;
+$black: #2d3033;
+$green: #335252;
+
+.taskItem {
+  display: flex;
+  border: 2px solid $green;
+  align-items: center;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  z-index: 1;
+
+  h3 {
+    padding-left: 20px;
+    padding-bottom: 4px;
+    color: $green;
+    margin-top: 10px;
+    font-size: 29px;
+    font-family: Zilla Slab;
+    font-style: italic;
+  }
+
+  .task {
+    display: block;
+
+    .startDuration {
+      display: block;
+      padding-left: 20px;
+
+      .dynamicInput {
+        font-family: Parisienne;
+        font-size: 18px;
+      }
+    }
+
+    .startTime,
+    .duration {
+      display: inline-block;
+      font-size: 16.5px;
+    }
+
+    .duration {
+      padding-left: 15px;
+    }
+  }
+
+  button {
+    margin-right: 20px;
+    padding: 7px;
+  }
+
+  .delete {
+    margin-left: auto;
+    border: none;
+    margin-right: 8px;
+    padding: 8px 3px 0 3px;
+
+    &:hover {
+      box-shadow: 0 0 3px 0;
+      background-color: lighten($grey, 10%);
+      color: $green;
+      cursor: pointer;
+      border-radius: 5px;
+      color: $red;
+    }
+  }
+
+  .start {
+    background-color: lighten($green, 45%);
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      box-shadow: 0 0 3px 0;
+      background-color: lighten($grey, 10%);
+      color: $green;
+      cursor: pointer;
+    }
+  }
+
+  .stop {
+    background-color: lighten($red, 25%);
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      box-shadow: 0 0 3px 0;
+      background-color: lighten($grey, 10%);
+      color: $red;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .startDuration {
+    text-align: left;
+  }
+  .startTime {
+    width: 100%;
+    margin-right: 80px;
+    margin-bottom: 4px;
+  }
+
+  .duration {
+    padding-left: 0 !important;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,120 @@
+$red: #aa4b41;
+$grey: #d4dde1;
+$black: #2d3033;
+$green: #335252;
+$lightgreen: #d8e0bb;
+$yellow: #fff5c3;
+$blue: #76aac2;
+
+@media screen and (max-width: 500px) {
+  .hideMobile {
+    display: none;
+  }
+}
+
+.taskListPage {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-family: 'Bungee Shade';
+  }
+
+  h3 {
+    font-family: Bad Script;
+    font-size: 20px;
+    margin-bottom: -10px;
+    text-align: left;
+    padding-left: 10px;
+    color: $black;
+  }
+
+  ul {
+    padding: 0;
+
+    .taskComponent {
+      box-shadow: -12px 36px $green;
+      border-radius: 6px;
+    }
+
+    .empty {
+      background-color: lighten($red, 51%);
+      border: 2px solid $red;
+      margin: auto;
+      padding: 17px 0 10px 0;
+      border-radius: 5px;
+      color: $red;
+    }
+
+    .taskListCurrent {
+      text-align: left;
+
+      border-radius: 5px;
+
+      .statusWrapper {
+        display: flex;
+        padding: 0 20px 0 20px;
+        color: $grey;
+        margin-right: 15px;
+        margin-top: -14px;
+
+        .dynamicInput {
+          font-family: Parisienne;
+          font-size: 18px;
+          padding-left: 5px;
+        }
+
+        .startDate {
+          display: block;
+          margin-left: -10px;
+        }
+
+        .counter {
+          margin-left: auto;
+          height: 25px;
+          margin-top: 14px;
+          margin-right: 8px;
+          border: none;
+          border-radius: 5px;
+          background-color: $grey;
+
+          &:hover {
+            background-color: lighten($grey, 10%);
+            box-shadow: 0 0 10px 0;
+            color: $black;
+            cursor: pointer;
+          }
+        }
+
+        .checked {
+          margin-left: auto;
+          margin-top: 6px;
+          margin-right: 2px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .createTaskButton {
+    border: none;
+    margin-top: 50px;
+
+    .button {
+      color: $black;
+      margin: auto;
+      border: 1px solid $green;
+      border-radius: 10px;
+      padding: 12px 8px 5px 8px;
+      border-top: 6px solid $green;
+
+      &:hover {
+        background-color: lighten($blue, 28%);
+        cursor: pointer;
+      }
+    }
+  }
+}

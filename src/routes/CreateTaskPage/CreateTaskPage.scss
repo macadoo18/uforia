@@ -1,0 +1,110 @@
+$red: #aa4b41;
+$grey: #d4dde1;
+$black: #2d3033;
+$green: #335252;
+$blue: #76aac2;
+$lightgreen: #d8e0bb;
+
+.createTaskPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: Bungee Shade;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .createTaskForm {
+    border: 2px solid $green;
+    border-radius: 5px;
+    padding: 30px;
+    width: 80%;
+    max-width: 450px;
+    background-color: lighten($lightgreen, 15%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .taskName {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 5px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input {
+      padding-left: 5px;
+      box-shadow: 0px 0px 3px 0px;
+    }
+
+    .startDurationGroup {
+      display: flex;
+      margin-bottom: 20px;
+
+      label {
+        color: $black;
+      }
+
+      .formGroup {
+        display: block;
+        margin: auto;
+
+        .start,
+        .duration {
+          border-radius: 4px;
+          border: none;
+          height: 23px;
+        }
+
+        .startContainer {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .durationContainer {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .categoryDropdown {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      select {
+        border: none;
+        width: 142px;
+        padding: 3px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 3px 0px;
+      }
+    }
+
+    .submit {
+      color: $black;
+      display: block;
+      margin: auto;
+      margin-top: 35px;
+      border: 1px solid $green;
+      border-radius: 10px;
+      padding: 8px 10px 7px 10px;
+      border-top: 6px solid $green;
+
+      &:hover {
+        background-color: lighten($blue, 28%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .formGroup input {
+      width: 90%;
+    }
+  }
+}
