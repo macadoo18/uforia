@@ -202,9 +202,9 @@ class App extends React.Component {
   };
 
   render() {
-    fetch(`${config.API_ENDPOINT}`)
-      .then(res => res.json())
-      .then(res => console.log(res));
+    // fetch(`${config.API_ENDPOINT}`)
+    //   .then(res => res.json())
+    //   .then(res => console.log(res));
 
     const contextValue = {
       streak: this.state.streak,
